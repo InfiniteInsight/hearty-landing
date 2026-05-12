@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hearty — Food & Symptom Journal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-bg {
+      background: radial-gradient(ellipse at top, #fff7ed 0%, #ffffff 60%);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold gradient-text">Hearty</span>
+      <a href="#waitlist" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium px-4 py-2 rounded-full transition-colors">
+        Join Waitlist
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg pt-32 pb-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-4">Coming Soon</p>
+      <h1 class="text-5xl font-extrabold leading-tight mb-6">
+        Log what you eat.<br />
+        <span class="gradient-text">Understand how you feel.</span>
+      </h1>
+      <p class="text-xl text-gray-600 mb-10 max-w-xl mx-auto">
+        Hearty is a personal food and symptom journal that uses AI to find the connections between what you eat and how your body responds — with minimal effort from you.
+      </p>
+      <a href="#waitlist" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-colors shadow-lg shadow-orange-200">
+        Get Early Access
+      </a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-14">Everything you need, nothing you don't</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">🎙️</div>
+          <h3 class="text-lg font-semibold mb-2">Voice-First Logging</h3>
+          <p class="text-gray-600">Say "Had oatmeal with berries for breakfast" and Hearty handles the rest. No menus to navigate, no checkboxes to tick.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">📸</div>
+          <h3 class="text-lg font-semibold mb-2">Photo Logging</h3>
+          <p class="text-gray-600">Snap a photo of your meal. AI identifies the food, estimates portions, and logs it automatically.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">🔔</div>
+          <h3 class="text-lg font-semibold mb-2">Smart Follow-Ups</h3>
+          <p class="text-gray-600">Hearty checks in after meals to ask how you're feeling. Gentle, configurable, and always at the right time.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">🧠</div>
+          <h3 class="text-lg font-semibold mb-2">AI Correlation Engine</h3>
+          <p class="text-gray-600">Over time, Hearty surfaces patterns — "Dairy seems to correlate with your bloating 3 hours later" — in plain language, with honest confidence scores.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">📊</div>
+          <h3 class="text-lg font-semibold mb-2">Trends Dashboard</h3>
+          <p class="text-gray-600">Visualize your health data over days, weeks, and months. Export a report to share with your doctor.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-gray-100 hover:border-orange-200 transition-colors">
+          <div class="text-3xl mb-4">🔒</div>
+          <h3 class="text-lg font-semibold mb-2">Private by Design</h3>
+          <p class="text-gray-600">Your health data belongs to you. Secure, encrypted, and never sold. Always.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 px-6 bg-orange-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-14">How it works</h2>
+      <div class="space-y-10 text-left">
+
+        <div class="flex gap-6 items-start">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center shrink-0 text-lg">1</div>
+          <div>
+            <h3 class="text-lg font-semibold mb-1">Log in seconds</h3>
+            <p class="text-gray-600">Speak a sentence, take a photo, or type a quick note. Hearty understands natural language — no rigid formats required.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center shrink-0 text-lg">2</div>
+          <div>
+            <h3 class="text-lg font-semibold mb-1">Hearty checks in</h3>
+            <p class="text-gray-600">30–90 minutes after a meal, Hearty sends a gentle nudge to log how you feel. Bloating? Energy crash? Great digestion? It all gets tracked.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6 items-start">
+          <div class="w-10 h-10 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center shrink-0 text-lg">3</div>
+          <div>
+            <h3 class="text-lg font-semibold mb-1">AI finds the patterns</h3>
+            <p class="text-gray-600">As your journal grows, Hearty's AI analyzes the data and surfaces clear, honest insights about which foods affect you and how.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section id="waitlist" class="py-24 px-6 bg-white">
+    <div class="max-w-lg mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Be the first to try Hearty</h2>
+      <p class="text-gray-600 mb-10">We're in early development. Join the waitlist and we'll reach out when access opens.</p>
+
+      <form id="waitlist-form" class="space-y-4">
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Your name (optional)"
+          class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm"
+        />
+        <input
+          type="email"
+          id="email-input"
+          placeholder="Your email address"
+          required
+          class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-400 text-sm"
+        />
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-xl transition-colors text-sm"
+        >
+          Join the Waitlist
+        </button>
+      </form>
+
+      <div id="success-msg" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-xl text-green-800 text-sm">
+        🎉 You're on the list! We'll be in touch when Hearty is ready.
+      </div>
+      <div id="error-msg" class="hidden mt-6 p-4 bg-red-50 border border-red-200 rounded-xl text-red-800 text-sm">
+        Something went wrong. Please try again or email us directly.
+      </div>
+      <div id="dupe-msg" class="hidden mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm">
+        You're already on the waitlist! We'll be in touch soon.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 border-t border-gray-100 text-center text-sm text-gray-400">
+    <p class="font-semibold gradient-text text-base mb-2">Hearty</p>
+    <p>© 2026 Hearty. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const SUPABASE_URL = 'https://ehuanqnkqehpivwuqpqw.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVodWFucW5rcWVocGl2d3VxcHF3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5MjQ2MTcsImV4cCI6MjA5MzUwMDYxN30.0zvktZo4UTgP0q_EkKDpt3rXUUMM6d6Yi18YuZHLGOQ';
+
+    document.getElementById('waitlist-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const btn = document.getElementById('submit-btn');
+      const email = document.getElementById('email-input').value.trim();
+      const name = document.getElementById('name-input').value.trim();
+
+      btn.disabled = true;
+      btn.textContent = 'Joining...';
+      ['success-msg', 'error-msg', 'dupe-msg'].forEach(id => document.getElementById(id).classList.add('hidden'));
+
+      try {
+        const res = await fetch(`${SUPABASE_URL}/rest/v1/waitlist`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'apikey': SUPABASE_ANON_KEY,
+            'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+            'Prefer': 'return=minimal',
+          },
+          body: JSON.stringify({ email, name: name || null }),
+        });
+
+        if (res.status === 201) {
+          document.getElementById('waitlist-form').classList.add('hidden');
+          document.getElementById('success-msg').classList.remove('hidden');
+        } else if (res.status === 409) {
+          document.getElementById('dupe-msg').classList.remove('hidden');
+        } else {
+          document.getElementById('error-msg').classList.remove('hidden');
+        }
+      } catch {
+        document.getElementById('error-msg').classList.remove('hidden');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Join the Waitlist';
+      }
+    });
+  </script>
+
+</body>
+</html>
