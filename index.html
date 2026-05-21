@@ -14,8 +14,45 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    .hero-bg {
-      background: radial-gradient(ellipse at top, #fff7ed 0%, #ffffff 60%);
+    .hero-bg { background: #ffffff; }
+    .gradient-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      mix-blend-mode: multiply;
+    }
+    .orb-orange {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, #fed7aa 0%, transparent 70%);
+      top: -20%; left: -10%;
+      animation: float-1 12s ease-in-out infinite;
+    }
+    .orb-teal {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #99f6e4 0%, transparent 70%);
+      top: -10%; right: -10%;
+      animation: float-2 10s ease-in-out infinite;
+    }
+    .orb-pink {
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, #fbcfe8 0%, transparent 70%);
+      bottom: -20%; left: 35%;
+      animation: float-3 14s ease-in-out infinite;
+    }
+    @keyframes float-1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33%       { transform: translate(100px, 50px) scale(1.1); }
+      66%       { transform: translate(-50px, 100px) scale(0.9); }
+    }
+    @keyframes float-2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33%       { transform: translate(-80px, 60px) scale(0.9); }
+      66%       { transform: translate(40px, -80px) scale(1.1); }
+    }
+    @keyframes float-3 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33%       { transform: translate(60px, -40px) scale(1.1); }
+      66%       { transform: translate(-60px, 30px) scale(0.95); }
     }
     @keyframes blob {
       0%, 100% { transform: translateY(10px); }
@@ -42,8 +79,13 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg pt-32 pb-20 px-6">
-    <div class="max-w-3xl mx-auto text-center">
+  <section class="hero-bg pt-32 pb-20 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="gradient-orb orb-orange"></div>
+      <div class="gradient-orb orb-teal"></div>
+      <div class="gradient-orb orb-pink"></div>
+    </div>
+    <div class="max-w-3xl mx-auto text-center relative z-10">
       <p class="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-4">Coming Soon</p>
       <h1 class="text-5xl font-extrabold leading-tight mb-6">
         Log what you eat.<br />
