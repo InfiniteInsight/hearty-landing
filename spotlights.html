@@ -14,9 +14,15 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+    @keyframes blob {
+      0%, 100% { transform: translateY(10px); }
+      50% { transform: translate(-10px); }
+    }
+    .animate-blob { animation: blob 2s ease-in-out infinite; }
+    .animation-delay-1000 { animation-delay: -1s; }
   </style>
 </head>
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-gray-900 text-white antialiased">
 
   <!-- Nav -->
   <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 z-50">
@@ -35,53 +41,93 @@
   <!-- Header -->
   <section class="pt-32 pb-12 px-6 text-center">
     <p class="text-orange-500 font-semibold text-sm uppercase tracking-wider mb-3">Spotlights</p>
-    <h1 class="text-4xl font-extrabold mb-4">Projects worth seeing</h1>
-    <p class="text-gray-500 max-w-xl mx-auto">Hearty is part of a small community of independent makers building tools for people who've often been overlooked. Here's who we're shipping alongside.</p>
+    <h1 class="text-4xl font-extrabold mb-4 text-white">Projects worth seeing</h1>
+    <p class="text-gray-400 max-w-xl mx-auto">Hearty is part of a small community of independent makers building tools for people who've often been overlooked. Here's who we're shipping alongside.</p>
   </section>
 
   <!-- Cards -->
-  <section class="pb-24 px-6">
+  <section class="pb-32 px-6">
     <div class="max-w-5xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="flex flex-wrap justify-center gap-10">
 
-        <a href="https://feygon.github.io/SensoryNav/" target="_blank" rel="noopener noreferrer"
-           class="group p-6 rounded-2xl border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all flex flex-col">
-          <div class="text-3xl mb-4">🗺️</div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">SensoryNav</h3>
-          <p class="text-gray-600 text-sm flex-1">A sensory-accommodation layer for maps — built for neurodivergent and sensory-sensitive people who navigate the world differently.</p>
-          <p class="mt-4 text-xs text-teal-600 font-medium">by Feygon →</p>
+        <a href="https://feygon.github.io/SensoryNav/" target="_blank" rel="noopener noreferrer" class="group relative w-[320px] h-[400px] block transition-all duration-500">
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#0ea5e9,#4f46e5)"></span>
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] blur-[30px] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#0ea5e9,#4f46e5)"></span>
+          <span class="pointer-events-none absolute inset-0 z-10">
+            <span class="absolute top-0 left-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-100 animate-blob group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 animate-blob animation-delay-1000 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+          </span>
+          <div class="relative z-20 left-0 p-[20px_40px] bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] shadow-lg rounded-lg text-white transition-all duration-500 group-hover:left-[-25px] group-hover:p-[60px_40px]">
+            <div class="text-3xl mb-3">🗺️</div>
+            <h3 class="text-xl mb-2">SensoryNav</h3>
+            <p class="text-sm leading-relaxed mb-3">A sensory-accommodation layer for maps — built for neurodivergent and sensory-sensitive people who navigate the world differently.</p>
+            <p class="text-xs text-white/60 mb-2">by Feygon</p>
+            <span class="inline-block text-sm font-bold text-black bg-white px-3 py-2 rounded">Visit →</span>
+          </div>
         </a>
 
-        <a href="https://timemap.space/" target="_blank" rel="noopener noreferrer"
-           class="group p-6 rounded-2xl border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all flex flex-col">
-          <div class="text-3xl mb-4">🌈</div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">Time Map</h3>
-          <p class="text-gray-600 text-sm flex-1">A customizable calendar map for time-space synesthesia havers — presents your Google Calendar the same way you see it in your head.</p>
-          <p class="mt-4 text-xs text-teal-600 font-medium">by Silvia →</p>
+        <a href="https://timemap.space/" target="_blank" rel="noopener noreferrer" class="group relative w-[320px] h-[400px] block transition-all duration-500">
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#f59e0b,#f43f5e)"></span>
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] blur-[30px] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#f59e0b,#f43f5e)"></span>
+          <span class="pointer-events-none absolute inset-0 z-10">
+            <span class="absolute top-0 left-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-100 animate-blob group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 animate-blob animation-delay-1000 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+          </span>
+          <div class="relative z-20 left-0 p-[20px_40px] bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] shadow-lg rounded-lg text-white transition-all duration-500 group-hover:left-[-25px] group-hover:p-[60px_40px]">
+            <div class="text-3xl mb-3">🌈</div>
+            <h3 class="text-xl mb-2">Time Map</h3>
+            <p class="text-sm leading-relaxed mb-3">A customizable calendar map for time-space synesthesia havers — presents your Google Calendar the same way you see it in your head.</p>
+            <p class="text-xs text-white/60 mb-2">by Silvia</p>
+            <span class="inline-block text-sm font-bold text-black bg-white px-3 py-2 rounded">Visit →</span>
+          </div>
         </a>
 
-        <a href="https://gothbabeclothes.square.site/" target="_blank" rel="noopener noreferrer"
-           class="group p-6 rounded-2xl border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all flex flex-col">
-          <div class="text-3xl mb-4">🖤</div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">Disabled Fashion</h3>
-          <p class="text-gray-600 text-sm flex-1">Adaptive gothic clothing made by and for disabled people. Fashion that fits your body, your style, and your life.</p>
-          <p class="mt-4 text-xs text-teal-600 font-medium">by Sammie →</p>
+        <a href="https://gothbabeclothes.square.site/" target="_blank" rel="noopener noreferrer" class="group relative w-[320px] h-[400px] block transition-all duration-500">
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#9333ea,#312e81)"></span>
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] blur-[30px] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#9333ea,#312e81)"></span>
+          <span class="pointer-events-none absolute inset-0 z-10">
+            <span class="absolute top-0 left-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-100 animate-blob group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 animate-blob animation-delay-1000 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+          </span>
+          <div class="relative z-20 left-0 p-[20px_40px] bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] shadow-lg rounded-lg text-white transition-all duration-500 group-hover:left-[-25px] group-hover:p-[60px_40px]">
+            <div class="text-3xl mb-3">🖤</div>
+            <h3 class="text-xl mb-2">Disabled Fashion</h3>
+            <p class="text-sm leading-relaxed mb-3">Adaptive gothic clothing made by and for disabled people. Fashion that fits your body, your style, and your life.</p>
+            <p class="text-xs text-white/60 mb-2">by Sammie</p>
+            <span class="inline-block text-sm font-bold text-black bg-white px-3 py-2 rounded">Visit →</span>
+          </div>
         </a>
 
-        <a href="https://www.veskaindex.com/" target="_blank" rel="noopener noreferrer"
-           class="group p-6 rounded-2xl border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all flex flex-col">
-          <div class="text-3xl mb-4">🌙</div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">Veska Index</h3>
-          <p class="text-gray-600 text-sm flex-1">A blind-observation research instrument for celestial timing systems — open data for people who track time by the sky.</p>
-          <p class="mt-4 text-xs text-teal-600 font-medium">by Effy →</p>
+        <a href="https://www.veskaindex.com/" target="_blank" rel="noopener noreferrer" class="group relative w-[320px] h-[400px] block transition-all duration-500">
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#1d4ed8,#7c3aed)"></span>
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] blur-[30px] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#1d4ed8,#7c3aed)"></span>
+          <span class="pointer-events-none absolute inset-0 z-10">
+            <span class="absolute top-0 left-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-100 animate-blob group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 animate-blob animation-delay-1000 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+          </span>
+          <div class="relative z-20 left-0 p-[20px_40px] bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] shadow-lg rounded-lg text-white transition-all duration-500 group-hover:left-[-25px] group-hover:p-[60px_40px]">
+            <div class="text-3xl mb-3">🌙</div>
+            <h3 class="text-xl mb-2">Veska Index</h3>
+            <p class="text-sm leading-relaxed mb-3">A blind-observation research instrument for celestial timing systems — open data for people who track time by the sky.</p>
+            <p class="text-xs text-white/60 mb-2">by Effy</p>
+            <span class="inline-block text-sm font-bold text-black bg-white px-3 py-2 rounded">Visit →</span>
+          </div>
         </a>
 
-        <a href="https://cat-game-xi.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="group p-6 rounded-2xl border border-gray-100 hover:border-orange-200 hover:shadow-md transition-all flex flex-col">
-          <div class="text-3xl mb-4">🐱</div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-orange-500 transition-colors">Cat Apartment Simulator</h3>
-          <p class="text-gray-600 text-sm flex-1">The only cozy game where you play as a cat inside a lived-in apartment, watching the humans' daily routines unfold around you, with the choice to cause mischief or not.</p>
-          <p class="mt-4 text-xs text-teal-600 font-medium">by Molly · @mollymotion →</p>
+        <a href="https://cat-game-xi.vercel.app/" target="_blank" rel="noopener noreferrer" class="group relative w-[320px] h-[400px] block transition-all duration-500">
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#f97316,#facc15)"></span>
+          <span class="absolute top-0 left-[50px] w-1/2 h-full rounded-lg skew-x-[15deg] blur-[30px] transition-all duration-500 group-hover:skew-x-0 group-hover:left-[20px] group-hover:w-[calc(100%-90px)]" style="background:linear-gradient(315deg,#f97316,#facc15)"></span>
+          <span class="pointer-events-none absolute inset-0 z-10">
+            <span class="absolute top-0 left-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-100 animate-blob group-hover:top-[-50px] group-hover:left-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+            <span class="absolute bottom-0 right-0 w-0 h-0 rounded-lg opacity-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px] transition-all duration-500 animate-blob animation-delay-1000 group-hover:bottom-[-50px] group-hover:right-[50px] group-hover:w-[100px] group-hover:h-[100px] group-hover:opacity-100"></span>
+          </span>
+          <div class="relative z-20 left-0 p-[20px_40px] bg-[rgba(255,255,255,0.05)] backdrop-blur-[10px] shadow-lg rounded-lg text-white transition-all duration-500 group-hover:left-[-25px] group-hover:p-[60px_40px]">
+            <div class="text-3xl mb-3">🐱</div>
+            <h3 class="text-xl mb-2">Cat Apartment Simulator</h3>
+            <p class="text-sm leading-relaxed mb-3">The only cozy game where you play as a cat inside a lived-in apartment, watching the humans' daily routines unfold around you, with the choice to cause mischief or not.</p>
+            <p class="text-xs text-white/60 mb-2">by Molly · @mollymotion</p>
+            <span class="inline-block text-sm font-bold text-black bg-white px-3 py-2 rounded">Visit →</span>
+          </div>
         </a>
 
       </div>
@@ -89,7 +135,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-10 px-6 border-t border-gray-100 text-center text-sm text-gray-400">
+  <footer class="py-10 px-6 border-t border-gray-700 text-center text-sm text-gray-400">
     <p class="font-semibold gradient-text text-base mb-2">Hearty</p>
     <p>© 2026 Hearty. All rights reserved.</p>
   </footer>
