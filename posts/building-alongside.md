@@ -1,6 +1,6 @@
 One of the quieter things about building an indie app is how easy it is to do it in complete isolation. You ship in private, you worry in private, and you have no idea whether anyone else is making the same mistakes or figuring out the same things.
 
-This year I joined a cohort through [The Multiverse School](https://themultiverse.school) — a school that runs classes on AI, coding, creative tech, and a handful of other things, with the tagline "Unhinged Education for an Unhinged World." The cohort is a small group of independent makers building their own tools and projects, mostly for audiences that bigger companies aren't thinking about. We share progress, give each other feedback, and occasionally talk each other down from bad decisions.
+This year I joined a cohort through [The Multiverse School](https://themultiverse.school) — a school that runs classes on AI, coding, creative tech, and a handful of other things, with the tagline "Unhinged Education for an Unhinged World." The cohort is a small group of independent makers building their own tools and projects, mostly for audiences that bigger companies aren't thinking about. We share progress, give each other feedback, and are generally helpful to one another.
 
 A few of them are building things I genuinely think are worth knowing about.
 
