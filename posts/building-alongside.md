@@ -6,7 +6,7 @@ A few of them are building things I definitely think are worth knowing about.
 
 ## Who they are
 
-**Feygon** is building [SensoryNav](https://feygon.github.com/SensoryNav/) : a sensory-accommodation layer for maps, designed for neurodivergent and sensory-sensitive people. Standard map apps aren't built with them in mind. Feygon is fixing that.
+**Feygon** is building [SensoryNav](https://feygon.github.io/SensoryNav/) : a sensory-accommodation layer for maps, designed for neurodivergent and sensory-sensitive people. Standard map apps aren't built with them in mind. Feygon is fixing that.
 
 **Silvia** bult [Time Map](https://timemap.space/) : A customizable calendar map for time-space synesthesia havers to present their Google calendar the same way they see the calendar in their head.
 
