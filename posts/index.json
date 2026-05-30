@@ -1,5 +1,11 @@
 [
   {
+    "slug": "teaching-the-ai-to-listen",
+    "title": "Teaching the AI to listen",
+    "date": "2026-05-23",
+    "excerpt": "Two bugs that were quietly making Hearty feel unreliable — and what it took to fix them."
+  },
+  {
     "slug": "hey-hearty",
     "title": "\"Hey Hearty\" is working",
     "date": "2026-05-22",
