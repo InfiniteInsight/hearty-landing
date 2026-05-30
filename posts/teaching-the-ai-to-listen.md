@@ -4,7 +4,7 @@ This week I fixed two bugs that had been quietly making Hearty feel unreliable. 
 
 ## The symptom contamination problem
 
-Hearty's voice loop is conversational. You say what you ate, it logs the meal, and then it checks in: *how are you feeling?* The idea is to capture symptoms close to the time they happen, in a low-friction way.
+Hearty's voice loop is conversational. You say what you ate, it logs the meal, and then it checks in: *how are you feeling?* The idea is to log meals then capture symptoms as they onset sequentially after eating.
 
 What was actually happening: when you answered that follow-up, saying something like "I'm feeling a bit gassy," the AI was treating your response as part of the meal log. So "gassy" was getting merged into the meal description. You'd look at your log later and see something like "Quest protein bar, gassy, slight bloating" stored as the food entry.
 
